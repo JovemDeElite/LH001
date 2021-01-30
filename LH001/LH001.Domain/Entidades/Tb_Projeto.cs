@@ -10,6 +10,6 @@ namespace LH001.Domain.Entidades
         [Key]
         public int Id { get; set; }
         public string Nome { get; set; }
-        public ICollection<Tb_Projeto> Tb_Projetos { get; set; }
+        //public ICollection<Tb_Projeto> Tb_Projetos { get; set; }
     }
 }

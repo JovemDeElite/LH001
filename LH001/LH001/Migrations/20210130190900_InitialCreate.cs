@@ -13,18 +13,11 @@ namespace LH001.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Tb_DesenvolvedorId = table.Column<int>(type: "int", nullable: true)
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tb_Desenvolvedores", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Tb_Desenvolvedores_Tb_Desenvolvedores_Tb_DesenvolvedorId",
-                        column: x => x.Tb_DesenvolvedorId,
-                        principalTable: "Tb_Desenvolvedores",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -33,18 +26,11 @@ namespace LH001.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Tb_ProjetoId = table.Column<int>(type: "int", nullable: true)
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tb_Projetos", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Tb_Projetos_Tb_Projetos_Tb_ProjetoId",
-                        column: x => x.Tb_ProjetoId,
-                        principalTable: "Tb_Projetos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -96,11 +82,6 @@ namespace LH001.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Tb_Desenvolvedores_Tb_DesenvolvedorId",
-                table: "Tb_Desenvolvedores",
-                column: "Tb_DesenvolvedorId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Tb_Desenvolvedores_Projetos_Tb_DesenvolvedorId",
                 table: "Tb_Desenvolvedores_Projetos",
                 column: "Tb_DesenvolvedorId");
@@ -114,11 +95,6 @@ namespace LH001.Migrations
                 name: "IX_Tb_LancamentosHoras_Tb_Desenvolvedor_ProjetoId",
                 table: "Tb_LancamentosHoras",
                 column: "Tb_Desenvolvedor_ProjetoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tb_Projetos_Tb_ProjetoId",
-                table: "Tb_Projetos",
-                column: "Tb_ProjetoId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

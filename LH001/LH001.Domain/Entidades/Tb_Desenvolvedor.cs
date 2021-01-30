@@ -9,6 +9,6 @@ namespace LH001.Domain.Entidades
         [Key]
         public int Id { get; set; }
         public string Nome { get; set; }
-        public ICollection<Tb_Desenvolvedor> Tb_Desenvolvedores { get; set; }
+        //public ICollection<Tb_Desenvolvedor> Tb_Desenvolvedores { get; set; }
     }
 }

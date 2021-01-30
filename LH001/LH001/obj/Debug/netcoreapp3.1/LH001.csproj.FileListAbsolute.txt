@@ -1,6 +1,5 @@
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\LH001.exe
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.csprojAssemblyReference.cache
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.AssemblyInfoInputs.cache
@@ -63,3 +62,18 @@ C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.dll
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.pdb
 C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.genruntimeconfig.cache
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\LH001.Views.dll
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\LH001.Views.pdb
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.RazorAssemblyInfo.cache
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.RazorAssemblyInfo.cs
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.TagHelpers.input.cache
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.TagHelpers.output.cache
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.RazorCoreGenerate.cache
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.RazorTargetAssemblyInfo.cs
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\LH001.Views.pdb
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\IdentityModel.dll
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
+C:\Users\c.vasconcelos\Documents\GitHub\LH001\LH001\LH001\obj\Debug\netcoreapp3.1\Razor\Pages\Desenvolvedor\Index.cshtml.g.cs

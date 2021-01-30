@@ -29,12 +29,25 @@ namespace LH001
         {
             services.AddControllers();
             var connection = @"Data Source=server-jovemdeelite.database.windows.net;Initial Catalog=LH001;Persist Security Info=True;User ID=JovemDeElite;Password=pwd_LH001;";
-            services.AddDbContext<BdContext>(options => options.UseSqlServer(connection));
+            //services.AddDbContext<BdContext>(options => options.UseSqlServer(connection));
+            services.AddDbContext<BdContext>(options => {
+                options.UseSqlServer(connection,
+                    sqlServerOptionsAction: sqlOptions =>
+                    {
+                        sqlOptions.EnableRetryOnFailure(
+                            maxRetryCount: 10,
+                            maxRetryDelay: TimeSpan.FromSeconds(30),
+                            errorNumbersToAdd: null);
+                    });
+            });
+            services.AddMvc(option => option.EnableEndpointRouting = false);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -46,10 +59,19 @@ namespace LH001
 
             app.UseAuthorization();
 
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+
         }
     }
 }

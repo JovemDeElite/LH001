@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LH001.ServiceAPI</name>
+    </assembly>
+    <members>
+        <member name="M:LH001.ServiceAPI.Controllers.v1.DesenvolvedorController.ListarDesenvolvedores">
+            <summary>
+            Get todos os Desenvolvedores
+            </summary>
+            
+        </member>
+    </members>
+</doc>

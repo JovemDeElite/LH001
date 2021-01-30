@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LH001.Migrations
 {
     [DbContext(typeof(BdContext))]
-    [Migration("20210130170100_InitialCreate")]
+    [Migration("20210130190900_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,12 +31,7 @@ namespace LH001.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Tb_DesenvolvedorId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("Tb_DesenvolvedorId");
 
                     b.ToTable("Tb_Desenvolvedores");
                 });
@@ -99,21 +94,9 @@ namespace LH001.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Tb_ProjetoId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("Tb_ProjetoId");
-
                     b.ToTable("Tb_Projetos");
-                });
-
-            modelBuilder.Entity("LH001.Domain.Entidades.Tb_Desenvolvedor", b =>
-                {
-                    b.HasOne("LH001.Domain.Entidades.Tb_Desenvolvedor", null)
-                        .WithMany("Tb_Desenvolvedores")
-                        .HasForeignKey("Tb_DesenvolvedorId");
                 });
 
             modelBuilder.Entity("LH001.Domain.Entidades.Tb_Desenvolvedor_Projeto", b =>
@@ -144,23 +127,6 @@ namespace LH001.Migrations
                         .IsRequired();
 
                     b.Navigation("Tb_Desenvolvedor_Projeto");
-                });
-
-            modelBuilder.Entity("LH001.Domain.Entidades.Tb_Projeto", b =>
-                {
-                    b.HasOne("LH001.Domain.Entidades.Tb_Projeto", null)
-                        .WithMany("Tb_Projetos")
-                        .HasForeignKey("Tb_ProjetoId");
-                });
-
-            modelBuilder.Entity("LH001.Domain.Entidades.Tb_Desenvolvedor", b =>
-                {
-                    b.Navigation("Tb_Desenvolvedores");
-                });
-
-            modelBuilder.Entity("LH001.Domain.Entidades.Tb_Projeto", b =>
-                {
-                    b.Navigation("Tb_Projetos");
                 });
 #pragma warning restore 612, 618
         }
