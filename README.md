@@ -45,5 +45,6 @@ Desenvolver um serviço que seja capaz de gerar um lançamento de horas.
 
 #### Identificação:
 
-Nome:Camila Silva Vasconcelos
-E-mail:milavasconcelloss@gmail.com
+Nome: Camila Silva Vasconcelos
+
+E-mail: milavasconcelloss@gmail.com
