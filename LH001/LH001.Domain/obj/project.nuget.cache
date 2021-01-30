@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Ibf5LWkXTF4+ICcW5LIVUOz+HaUe9UytAliySH7yXky2yGqviD/8gSM+F/IPsGGNKG7f8XFv6Wep52ylUsBD7Q==",
+  "dgSpecHash": "4QcjdEhsmhfpYx1+8LBa4GLX+CK6PUl7AnLIUEG+zc8Bylgn+mwLCNFSgrs4EQUdWfOKLmMZbUxtKki0nrh8Vg==",
   "success": true,
   "projectFilePath": "C:\\Users\\c.vasconcelos\\Documents\\GitHub\\LH001\\LH001\\LH001.Domain\\LH001.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\c.vasconcelos\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\c.vasconcelos\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\c.vasconcelos\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\c.vasconcelos\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
