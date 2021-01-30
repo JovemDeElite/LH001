@@ -24,9 +24,9 @@ namespace LH001.ServiceAPI.Controllers.v1
         }
 
         /// <summary>
-        /// Get todos os Desenvolvedores
+        /// Get todos os Desenvolvedores, sem nenhum parametro. Versão atual 1.0
         /// </summary>
-        /// 
+        /// <returns>Retorna uma lista do tipo desenvolvedor</returns>
         [HttpGet]
         [Route("Api/v{version:apiVersion}/Desenvolvedor/Listar")]
         public async Task<IActionResult> ListarDesenvolvedores()
